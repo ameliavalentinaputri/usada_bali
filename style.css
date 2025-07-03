@@ -297,7 +297,6 @@ footer {
   margin: 16px auto 8px auto;
   max-width: 100px;     /* Ganti sesuai selera, misal 220px, 320px */
   max-height: 100px;    /* Atur tinggi maksimal, biar tidak melebar */
-  vertical-allign: middle;
   width: auto;
   height: auto;
   border-radius: 11px;
