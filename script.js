@@ -252,7 +252,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "Gambar": NaN,
         "Referensi gambar ": "https://docs.google.com/document/d/1e4bqPcnku7AfTCbdIgqGChumywTNuvUJ/edit?usp=sharing&ouid=107390156108731673355&rtpof=true&sd=true"
         }
-        ];
+     ];
         
     // Elemen DOM
     const elements = {
