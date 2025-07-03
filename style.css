@@ -1,0 +1,232 @@
+/* General Styling */
+:root {
+    --primary-color: #388e3c;         /* Hijau herbal utama */
+    --secondary-color: #f5f5ef;       /* Putih kekuningan lembut */
+    --accent-color: #8d6748;          /* Coklat kayu hangat */
+    --font-color: #2f3a1c;            /* Hijau gelap natural */
+    --card-bg: #fffdf6;               /* Putih kekuningan */
+    --header-font: 'Playfair Display', serif;
+    --body-font: 'Poppins', sans-serif;
+}
+
+/* General Styling */
+body {
+    font-family: var(--body-font);
+    line-height: 1.7;
+    color: var(--font-color);
+    background-color: var(--secondary-color);
+    margin: 0;
+    padding: 0;
+}
+
+/* Header and Navigation */
+header {
+    background-color: var(--card-bg);
+    color: var(--primary-color);
+    text-align: center;
+    padding: 30px 20px;
+    border-bottom: 4px solid var(--accent-color);
+    box-shadow: 0 2px 8px rgba(141,103,72,0.09); /* shadow coklat kayu */
+}
+
+header h1 {
+    font-family: var(--header-font);
+    margin: 0;
+    font-size: 2.8em;
+}
+
+header p {
+    margin: 5px 0 25px 0;
+    font-style: italic;
+    color: #70986d; /* hijau sage */
+}
+
+header nav button {
+    font-family: var(--body-font);
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 25px;
+    margin: 0 10px;
+    border: 2px solid var(--accent-color);
+    background-color: transparent;
+    color: var(--primary-color);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 50px;
+}
+header nav button:hover {
+    background-color: #e5f3e0;
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+header nav button.nav-active {
+    background-color: var(--primary-color);
+    color: white;
+    border-color: var(--accent-color);
+}
+
+/* Main Content */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    min-height: 75vh;
+}
+
+/* Content Sections */
+.content-section {
+    display: none;
+    padding: 40px;
+    background: var(--card-bg);
+    border-radius: 12px;
+    margin-top: 30px;
+    box-shadow: 0 4px 15px rgba(141,103,72,0.06);
+    animation: fadeIn 0.6s ease-in-out;
+}
+.content-section.active {
+    display: block;
+}
+
+#home-section {
+    text-align: center;
+}
+#home-section h2 {
+    font-family: var(--header-font);
+    color: var(--primary-color);
+    font-size: 2em;
+}
+.cta-button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.cta-button:hover {
+    background-color: #2e7031; /* Hijau lebih gelap */
+    transform: translateY(-2px);
+}
+
+/* Controls: Search Bar */
+.controls {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+#search-bar {
+    padding: 12px 20px;
+    width: 60%;
+    max-width: 500px;
+    border: 1px solid #aacbaa;
+    border-radius: 50px;
+    font-size: 16px;
+    box-shadow: 0 2px 5px rgba(56,142,60,0.06);
+}
+
+/* Usada Gallery and Cards */
+#usada-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+.usada-card {
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(141, 103, 72, 0.11);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 6px solid var(--primary-color);
+}
+.usada-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(56,142,60,0.13);
+    border-left: 6px solid var(--accent-color);
+}
+.usada-card h3 {
+    font-family: var(--header-font);
+    padding: 20px 25px 5px 25px;
+    margin: 0;
+    color: var(--primary-color);
+}
+.usada-card p {
+    padding: 0 25px 20px 25px;
+    margin: 0;
+    font-size: 0.93em;
+    color: #567057;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* Detail View */
+.usada-detail {
+    padding: 20px;
+}
+.usada-detail h2 {
+    font-family: var(--header-font);
+    color: var(--primary-color);
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.usada-detail h3 {
+     color: var(--primary-color);
+     font-family: var(--header-font);
+     border-bottom: 2px solid var(--accent-color);
+     padding-bottom: 5px;
+     margin-top: 30px;
+}
+.usada-detail .back-button {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: var(--accent-color);
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background-color 0.3s;
+}
+.usada-detail .back-button:hover {
+    background-color: #6d4c41;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    background-color: #f1ece6;
+    color: #777;
+    font-size: 0.92em;
+}
+
+/* Hidden Class & Animations */
+.hidden {
+    display: none !important;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+    .content-section {
+        padding: 20px;
+    }
+    #search-bar {
+        width: 90%;
+    }
+}
