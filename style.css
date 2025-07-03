@@ -230,3 +230,65 @@ footer {
   .content-section { padding: 7px; }
   #usada-gallery { gap: 7px; }
 }
+.hero-elegant {
+  background: var(--cream-dark);
+  border-radius: var(--radius);
+  box-shadow: 0 3px 14px #a2a26621;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 240px;
+  margin-bottom: 26px;
+  padding: 40px 10vw 48px 10vw;
+}
+
+.hero-inner {
+  text-align: center;
+  max-width: 670px;
+  margin: 0 auto;
+}
+
+.hero-title {
+  font-family: var(--header-font);
+  color: var(--olive-dark);
+  font-size: 2em;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  margin: 0 0 12px 0;
+}
+
+.hero-bullet {
+  color: var(--accent-gold);
+  font-size: 1.1em;
+  margin: 0 7px;
+}
+
+.hero-desc {
+  color: #5e5633;
+  font-family: var(--body-font);
+  font-size: 1.08em;
+  margin-bottom: 23px;
+  margin-top: 0;
+  line-height: 1.56;
+  letter-spacing: 0.01em;
+}
+
+.cta-button {
+  background: var(--olive);
+  color: #fff;
+  border: 1.7px solid var(--olive-dark);
+  border-radius: 21px;
+  font-size: 1.07em;
+  font-weight: 700;
+  padding: 14px 42px;
+  cursor: pointer;
+  box-shadow: 0 2.5px 0 #baa75823;
+  margin-top: 8px;
+  transition: background 0.14s, color 0.11s, box-shadow 0.12s;
+}
+
+.cta-button:hover {
+  background: var(--accent-gold);
+  color: var(--olive-dark);
+}
+
