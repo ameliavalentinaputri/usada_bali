@@ -295,8 +295,8 @@ footer {
 .usada-detail img {
   display: inline-block;
   margin: 16px auto 8px auto;
-  max-width: 100px;     /* Ganti sesuai selera, misal 220px, 320px */
-  max-height: 100px;    /* Atur tinggi maksimal, biar tidak melebar */
+  max-width: 150px;     /* Ganti sesuai selera, misal 220px, 320px */
+  max-height: 150px;    /* Atur tinggi maksimal, biar tidak melebar */
   width: auto;
   height: auto;
   border-radius: 11px;
