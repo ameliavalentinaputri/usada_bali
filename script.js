@@ -87,7 +87,11 @@ function showDetail(no) {
             <p>${usada['Cara penggunaan']}</p>
             <h3>Sumber</h3>
             <p>${usada['Sumber']}</p>
-            ${usada['Gambar'] ? `<img src="${usada['Gambar']}" alt="Gambar" style="max-width:100%; border-radius:12px; margin:10px 0;">` : ""}
+            ${usada['Gambar'] ? `
+              <div class="usada-image-wrapper">
+                <img src="${usada['Gambar']}" alt="Gambar">
+              </div>
+              : ""}
             <h3>Referensi Gambar</h3>
             <p><a href="${usada['Referensi gambar']}" target="_blank">${usada['Referensi gambar']}</a></p>
         </div>
