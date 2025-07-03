@@ -1,12 +1,12 @@
 /* General Styling */
 :root {
-  --primary-green: #708238;
-  --leaf-green: #a4be7b;
-  --wood-brown: #967259;
-  --cartoon-yellow: #dde5b6;
-  --sky-blue: #dde5b6;
-  --background: #f6f8ed;
-  --accent: #967259;
+  --primary-green: #5556246;
+  --leaf-green: #444929;
+  --wood-brown: #572c14;
+  --cartoon-yellow: #767933;
+  --sky-blue: #a5b297;
+  --background: #767933;
+  --accent: #737148;
   --header-font: 'Fredoka One', 'Baloo 2', cursive, sans-serif;
   --body-font: 'Poppins', sans-serif;
 }
@@ -15,7 +15,7 @@
 body {
   font-family: var(--body-font);
   background: linear-gradient(120deg, #f6f8ed 60%, #dde5b6 100%);
-  color: #2e4335;
+  color: #3c4c24;
   margin: 0;
   padding: 0;
   min-height: 100vh;
