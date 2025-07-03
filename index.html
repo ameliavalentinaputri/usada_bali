@@ -42,13 +42,87 @@
         &copy; 2025 Usada Bali. Website oleh Indah & Amel
     </footer>
     <script src="script.js"></script>
-    <!-- Chatbase Chatbot Embed -->
-    <iframe
-      src="https://www.chatbase.co/chatbot-iframe/2hfkXkI401xibtjC4BuWT"
-      width="370"
-      height="480"
-      style="position: fixed; bottom: 32px; right: 32px; z-index: 999; border-radius: 16px; box-shadow: 0 4px 18px #bab19166; border: none;"
-      allow="microphone;"
-    ></iframe>
+    <!-- Chatbase Chatbot Floating Button -->
+    <style>
+    #chatbase-launcher {
+      position: fixed;
+      bottom: 30px;
+      right: 32px;
+      z-index: 1001;
+      width: 60px;
+      height: 60px;
+      background: #586f4f;
+      border-radius: 50%;
+      box-shadow: 0 2px 12px #7b845c56;
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: background 0.18s;
+    }
+    #chatbase-launcher:hover { background: #91a282; }
+    #chatbase-launcher svg { width: 32px; height: 32px; fill: #fffbe5; }
+    
+    #chatbase-iframe-box {
+      position: fixed;
+      bottom: 100px;
+      right: 38px;
+      z-index: 1002;
+      display: none;
+      box-shadow: 0 6px 28px #8a915866;
+      border-radius: 18px;
+    }
+    #chatbase-iframe-box.active { display: block; }
+    
+    #chatbase-close {
+      position: absolute;
+      top: 10px;
+      right: 12px;
+      z-index: 1003;
+      background: #fffbe5;
+      color: #726f45;
+      border: none;
+      font-size: 22px;
+      font-weight: bold;
+      border-radius: 50%;
+      width: 32px;
+      height: 32px;
+      cursor: pointer;
+      box-shadow: 0 1px 8px #bab19166;
+      transition: background 0.14s;
+    }
+    #chatbase-close:hover { background: #f2efdf; }
+    </style>
+    
+    <button id="chatbase-launcher" title="Tanya AI">
+      <!-- Icon chat/message -->
+      <svg viewBox="0 0 24 24"><path d="M2 21l1.65-4.75A8.987 8.987 0 012 12C2 6.477 7.029 2 12 2s10 4.477 10 10-5.029 10-10 10a9.062 9.062 0 01-4.25-1.01L2 21zm4.584-3.624l.507.302A7.062 7.062 0 0012 20c4.418 0 8-3.134 8-8s-3.582-8-8-8-8 3.134-8 8c0 1.381.35 2.683 1.015 3.834l.302.507-.984 2.834 2.834-.984z"></path></svg>
+    </button>
+    <div id="chatbase-iframe-box">
+      <button id="chatbase-close" title="Tutup">&times;</button>
+      <iframe
+        src="https://www.chatbase.co/chatbot-iframe/2hfkXkI401xibtjC4BuWT"
+        width="370"
+        height="480"
+        style="border:none; border-radius:16px; display:block;"
+        allow="microphone;">
+      </iframe>
+    </div>
+    <script>
+    const chatbaseLauncher = document.getElementById('chatbase-launcher');
+    const chatbaseBox = document.getElementById('chatbase-iframe-box');
+    const chatbaseClose = document.getElementById('chatbase-close');
+    
+    chatbaseLauncher.addEventListener('click', () => {
+      chatbaseBox.classList.add('active');
+      chatbaseLauncher.style.display = 'none';
+    });
+    chatbaseClose.addEventListener('click', () => {
+      chatbaseBox.classList.remove('active');
+      chatbaseLauncher.style.display = 'flex';
+    });
+    </script>
+
 </body>
 </html>
