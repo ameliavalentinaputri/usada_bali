@@ -305,14 +305,6 @@ footer {
   border: 1.1px solid var(--olive-soft);
 }
 
-.usada-image-wrapper {
-  text-align: center;
-  margin: 0;
-}
-.usada-image-wrapper img {
-  display: inline-block;
-}
-
 @media (max-width: 500px) {
   .usada-detail img {
     max-width: 95vw;
