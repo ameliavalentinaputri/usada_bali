@@ -292,11 +292,6 @@ footer {
   color: var(--olive-dark);
 }
 
-.usada-detail {
-  /* ... (style sebelumnya) ... */
-  text-align: center;    /* tambahkan baris ini! */
-}
-
 .usada-detail img {
   display: inline-block;
   margin: 16px auto 8px auto;
